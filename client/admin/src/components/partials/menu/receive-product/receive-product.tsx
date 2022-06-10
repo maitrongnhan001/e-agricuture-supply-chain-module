@@ -31,14 +31,14 @@ const ReceiveProduct = () => {
             </div>
         </div>
         <div className={`child-menu-item ${isActive ? 'show' : 'hide'}`} id="receive-product">
-            <Link className='format-link' to='/'>
+            <Link className='format-link' to='/main/products'>
                 <div className="child-item-menu-item">
                     Lô hàng cá nhân
                 </div>
             </Link>
-            <Link className='format-link' to='/'>
+            <Link className='format-link' to='/main/confirm-product'>
                 <div className="child-item-menu-item">
-                    Tất cả lô hàng
+                    Lô hàng chờ xác nhận
                 </div>
             </Link>
         </div>

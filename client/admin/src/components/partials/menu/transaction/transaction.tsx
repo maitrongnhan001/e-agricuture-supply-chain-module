@@ -31,14 +31,14 @@ const Transaction = () => {
                 </div>
             </div>
             <div className={`child-menu-item ${isActive ? 'show' : 'hide'}`} id="transaction">
-                <Link className='format-link' to='/'>
+                <Link className='format-link' to='/main/transactions'>
                     <div className="child-item-menu-item">
                         Giao dịch cá nhân
                     </div>
                 </Link>
-                <Link className='format-link' to='/'>
+                <Link className='format-link' to='/main/confirm-transaction'>
                     <div className="child-item-menu-item">
-                        Tất cả giao dịch
+                        Chờ xác nhận
                     </div>
                 </Link>
             </div>
