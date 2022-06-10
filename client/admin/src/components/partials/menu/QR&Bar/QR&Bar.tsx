@@ -31,12 +31,12 @@ const QRAndBar = () => {
                 </div>
             </div>
             <div className={`child-menu-item ${isActive ? 'show' : 'hide'}`} id="profile">
-                <Link className='format-link' to='/'>
+                <Link className='format-link' to='/main/qr-bar'>
                     <div className="child-item-menu-item">
                         Quét QR code
                     </div>
                 </Link>
-                <Link className='format-link' to='/'>
+                <Link className='format-link' to='/main/qr-bar'>
                     <div className="child-item-menu-item">
                         Quét Bar code
                     </div>

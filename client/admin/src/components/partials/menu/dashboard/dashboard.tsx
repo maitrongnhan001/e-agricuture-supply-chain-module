@@ -33,14 +33,14 @@ const Dashboard = () => {
             </div>
         </div>
         <div className={`child-menu-item ${isActive ? 'show' : 'hide'}`} id="dashboard">
-            <Link className='format-link' to='/'>
+            <Link className='format-link' to='/main/dashboard'>
                 <div className="child-item-menu-item">
-                    Thống kê cá nhân
+                    Thống kê lô hàng
                 </div>
             </Link>
-            <Link className='format-link' to='/'>
+            <Link className='format-link' to='/main/dashboard'>
                 <div className="child-item-menu-item">
-                    Thống kê tập thể
+                    Thống kê giao dịch
                 </div>
             </Link>
         </div>

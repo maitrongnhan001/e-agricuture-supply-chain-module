@@ -31,14 +31,14 @@ const SendProduct = () => {
             </div>
         </div>
         <div className={`child-menu-item ${isActive ? 'show' : 'hide'}`} id="send-product">
-            <Link className='format-link' to='/'>
+            <Link className='format-link' to='/main/products'>
                 <div className="child-item-menu-item">
                     Lô hàng cá nhân
                 </div>
             </Link>
-            <Link className='format-link' to='/'>
+            <Link className='format-link' to='/main/confirm-product'>
                 <div className="child-item-menu-item">
-                    Tất cả lô hàng
+                    Lô hàng xác nhận
                 </div>
             </Link>
         </div>

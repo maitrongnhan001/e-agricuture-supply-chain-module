@@ -1,8 +1,16 @@
 import { MDBBtn, MDBTable, MDBTableBody, MDBTableHead } from 'mdb-react-ui-kit';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './products.scss';
 
 const Products = () => {
+    const navigate = useNavigate()
+
+    //--------handle--------//
+    const clickShowProductDetails = () => {
+        navigate('/main/product-details')
+    }
+
     return (
         <div className='product-wrapper'>
             <br />
@@ -14,29 +22,53 @@ const Products = () => {
                     <MDBTableHead light>
                         <tr>
                             <th scope='col'>#</th>
-                            <th scope='col'>First</th>
-                            <th scope='col'>Last</th>
-                            <th scope='col'>Handle</th>
+                            <th scope='col'>Mã số lô hàng</th>
+                            <th scope='col'>Tên lô hàng</th>
+                            <th scope='col'>Ngày sản xuất</th>
+                            <th scope='col'>Số lượng</th>
+                            <th scope='col'>Trạng thái</th>
+                            <th scope='col'>Xem thêm</th>
                         </tr>
                     </MDBTableHead>
                     <MDBTableBody>
                         <tr>
-                            <th scope='row'>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>1</td>
+                            <td>123443123565234</td>
+                            <td>Lúa đông xuân - Nguyễn Văn An - thu hoạch đợt một - 2021/2022</td>
+                            <td>21-3-2022</td>
+                            <td>5.000KG</td>
+                            <td>Hợp lệ</td>
+                            <td>
+                                <button className='btn btn-outline-success btn-floating' onClick={clickShowProductDetails}>
+                                    <i className="fa-solid fa-eye"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope='row'>2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td>2</td>
+                            <td>123443123565234</td>
+                            <td>Lúa đông xuân - Nguyễn Văn An - thu hoạch đợt hai - 2021/2022</td>
+                            <td>25-3-2022</td>
+                            <td>5.000KG</td>
+                            <td>Hợp lệ</td>
+                            <td>
+                                <button className='btn btn-outline-success btn-floating' onClick={clickShowProductDetails}>
+                                    <i className="fa-solid fa-eye"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                            <th scope='row'>3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
+                            <td>3</td>
+                            <td>123443123565234</td>
+                            <td>Lúa đông xuân - Nguyễn Văn An - thu hoạch đợt ba - 2021/2022</td>
+                            <td>30-3-2022</td>
+                            <td>5.000KG</td>
+                            <td>Hợp lệ</td>
+                            <td>
+                                <button className='btn btn-outline-success btn-floating' onClick={clickShowProductDetails}>
+                                    <i className="fa-solid fa-eye"></i>
+                                </button>
+                            </td>
                         </tr>
                     </MDBTableBody>
                 </MDBTable>
