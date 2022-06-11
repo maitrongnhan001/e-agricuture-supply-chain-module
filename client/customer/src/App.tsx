@@ -9,6 +9,8 @@ import Product from './pages/product'
 import ProductDetail from './pages/product-detail'
 import Transaction from './pages/transaction'
 import TransactionDetail from './pages/transaction-detail'
+import SaleDetail from './pages/sale-detail'
+import ProcedureDetail from './pages/procedure-detail'
 import QR from './pages/qr'
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path='/product-detail/:id' element={<ProductDetail></ProductDetail>}></Route>
         <Route path='/transaction' element={<Transaction></Transaction>}></Route>
         <Route path='/transaction-detail' element={<TransactionDetail></TransactionDetail>}></Route>
+        <Route path='/sale-detail/:id' element={<SaleDetail></SaleDetail>}></Route>
+        <Route path='/procedure-detail/:id' element={<ProcedureDetail></ProcedureDetail>}></Route>
         <Route path='/resource' element={<QR></QR>}></Route>
         <Route path='/'></Route>
         <Route path='*' element={<NotFault></NotFault>}></Route>
