@@ -11,6 +11,11 @@ function CardGroupComponent(): JSX.Element {
       <div>
         <CardComponent 
           image="/images/extension/main.jpg"
+          sx={{
+            m: '.5rem auto'
+          }}
+
+          width={240}
         >
           <h1 style={{fontSize: '1.5rem'}}>Title</h1>
           <p>Noi dung</p>
