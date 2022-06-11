@@ -5,16 +5,22 @@ import CardMedia from '@mui/material/CardMedia'
 import { CardActionArea } from '@mui/material'
 import { CardProps } from './card.props'
 
-export default function MultiActionAreaCard({children, image}: CardProps) {
+export default function MultiActionAreaCard({children, image, width, sx}: CardProps) {
   return (
-    <Card sx={{ maxWidth: 250, m:'2rem auto', boxShadow: '0 .05rem .1rem .1rem #cecece '}}>
+    <Card sx={
+              { 
+                ...sx,
+                width: width ? width : 220,
+                boxShadow: '0 .05rem .05rem .05rem #dedede '
+              }
+            }
+    >
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="160"
           image= {image}
           alt="green iguana"
-          
         />
         <CardContent>
           {children}
