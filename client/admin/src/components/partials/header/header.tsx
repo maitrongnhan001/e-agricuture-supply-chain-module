@@ -1,6 +1,6 @@
 import { MDBBtn, MDBInputGroup } from 'mdb-react-ui-kit';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './header.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { MenuControlSlice } from '../../../redux/slice/menu-control.slice';
@@ -9,12 +9,21 @@ import { menuControlSelector } from '../../../redux/selectors/menu-control.selec
 const Header = () => {
     const menuStatus = useSelector(menuControlSelector)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     //---------handle----------//
     const handleClickMenu = () => {
         dispatch(
             MenuControlSlice.actions.updateShowMenu(!menuStatus)
         )
+    }
+
+    const handleClickQR = () => {
+        navigate('/main/qr-bar')
+    }
+
+    const handleClickProfile = () => {
+        navigate('/main/profile')
     }
 
     return (
@@ -43,10 +52,10 @@ const Header = () => {
                 </div>
             </div>
             <div className="header-col-2">
-                <div className="QR">
+                <div className="QR" onClick={handleClickQR}>
                     <i className="fa-solid fa-qrcode"></i>
                 </div>
-                <div className="profile">
+                <div className="profile" onClick={handleClickProfile}>
                     <img className='avatar' src="/images/background.jpg" alt="avatar" />
                 </div>
             </div>

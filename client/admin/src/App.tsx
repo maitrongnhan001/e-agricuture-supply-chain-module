@@ -7,7 +7,7 @@ import {
 } from "react-router-dom"
 import Login from './components/layouts/login/login'
 import Main from './components/layouts/main/main'
-import NotFound from './components/layouts/not-found/not-found'
+import NotFault from './components/layouts/not-fault'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path='/login' element={<Login/>}></Route>
           <Route path='main/*' element={<Main/>}></Route>
           <Route path='' element={<Navigate to='/main'/>}></Route>
-          <Route path='*' element={<NotFound/>}></Route>
+          <Route path='*' element={<NotFault/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
