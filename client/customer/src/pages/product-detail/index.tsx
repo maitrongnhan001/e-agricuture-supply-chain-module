@@ -29,7 +29,7 @@ function Index() {
               <p>Số lượng:</p>
             </TimelineItemComponent>
           </TimelineComponent>
-        </div>
+        </div> 
     </div>
   )
 }

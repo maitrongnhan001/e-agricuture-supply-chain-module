@@ -12,10 +12,10 @@ function Index() {
         </div>
         <div className="menu">
           <ul>
+            <li><Link to='/'>TRANG CHỦ</Link></li>
             <li><Link to='/product'>SẢN PHẨM</Link></li>
             <li><Link to='/transaction'>GIAO DỊCH</Link></li>
             <li><Link to='/resource'>NGUỒN GỐC</Link></li>
-            <li><Link to='/information'>THÔNG TIN</Link></li>
           </ul>
         </div>
       </div>
