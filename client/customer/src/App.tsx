@@ -7,6 +7,9 @@ import NotFault from './pages/not-fault'
 import Main from './pages/main'
 import Product from './pages/product'
 import ProductDetail from './pages/product-detail'
+import Transaction from './pages/transaction'
+import TransactionDetail from './pages/transaction-detail'
+import QR from './pages/qr'
 
 function App() {
   return (
@@ -16,7 +19,9 @@ function App() {
         <Route path='/' element={<Main></Main>}></Route>
         <Route path='/product' element={<Product></Product>}></Route>
         <Route path='/product-detail/:id' element={<ProductDetail></ProductDetail>}></Route>
-        <Route path='/'></Route>
+        <Route path='/transaction' element={<Transaction></Transaction>}></Route>
+        <Route path='/transaction-detail' element={<TransactionDetail></TransactionDetail>}></Route>
+        <Route path='/resource' element={<QR></QR>}></Route>
         <Route path='/'></Route>
         <Route path='*' element={<NotFault></NotFault>}></Route>
       </Routes>
